@@ -1,0 +1,112 @@
+{
+"nbounces":3,
+"camera":{
+    "type":"pinhole",
+    "width":800,
+    "height":800,
+    "fov":35,
+    "position": [0.0, -3.5, 2.0],
+    "lookat": [0.0, 1.0, -0.1],
+    "up": [0.0, 0.0, 0.5]
+},
+"scene":{
+    "backgroundcolor":[0.01, 0.01, 0.01],
+    "lightsources": [
+    {
+        "type": "pointlight",
+        "position": [0.0, 0.6, 0.5],
+        "is": [100.0, 100.0, 100.0],
+        "id": [100.0, 100.0, 100.0]
+    }
+    ],
+  "shapes": [
+    {
+      "type": "sphere",
+      "center": [ 1.0, -1.0, -1.0 ],
+      "radius": 1.2,
+      "material": {
+        "ks": 0.4,
+        "kd": 0.8,
+        "specularexponent": 3,
+        "diffusecolor": [ 1.0, 0.75, 0.79 ],
+        "tPath": "../textures/pink.jpg",
+        "tWidth": 600,
+        "tHeight": 490
+      }
+    },
+    {
+      "type": "sphere",
+      "center": [ 0.0, 0.0, 0.0 ],
+      "radius": 0.7,
+      "material": {
+        "ks": 0.4,
+        "kd": 0.8,
+        "specularexponent": 3,
+        "diffusecolor": [ 0.4, 0.3, 0.4 ],
+        "tPath": "../textures/sky-map.jpg",
+        "tWidth": 850,
+        "tHeight": 480
+      }
+    },
+    {
+      "type": "sphere",
+      "center": [ 0.0, 0.0, 1.0 ],
+      "radius": 0.5,
+      "material": {
+        "ks": 0.4,
+        "kd": 0.8,
+        "specularexponent": 3,
+        "diffusecolor": [ 0.4, 0.3, 0.4 ],
+        "tPath": "../textures/sky-map.jpg",
+        "tWidth": 850,
+        "tHeight": 480
+      }
+    },
+    {
+      "type": "sphere",
+      "center": [ -1.0, -1.0, -2.0 ],
+      "radius": 0.7,
+      "material": {
+        "ks": 0.4,
+        "kd": 0.8,
+        "specularexponent": 3,
+        "diffusecolor": [ 0.4, 0.3, 0.4 ],
+        "tPath": "../textures/sky-map.jpg",
+        "tWidth": 850,
+        "tHeight": 480
+      }
+    },
+    {
+      "type": "sphere",
+      "center": [ 1.0, -1.5, 0.0 ],
+      "radius": 0.6,
+      "material": {
+        "ks": 0.4,
+        "kd": 0.8,
+        "specularexponent": 3,
+        "diffusecolor": [ 1.0, 0.75, 0.79 ],
+        "tPath": "../textures/pink.jpg",
+        "tWidth": 600,
+        "tHeight": 490
+      }
+    },
+    {
+      "type": "sphere",
+      "center": [ 0.0, -2.0, 1.0 ],
+      "radius": 0.7,
+      "material": {
+        "ks": 0.4,
+        "kd": 0.8,
+        "specularexponent": 3,
+        "diffusecolor": [ 1.0, 0.75, 0.79 ],
+        "tPath": "../textures/pink.jpg",
+        "tWidth": 600,
+        "tHeight": 490
+      }
+    }
+
+
+
+  ]
+}
+}

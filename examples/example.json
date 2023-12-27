@@ -1,0 +1,158 @@
+{
+"nbounces":3,
+"camera":{
+    "type":"pinhole",
+    "width":800,
+    "height":800,
+    "fov":35,
+  "position": [ 0, -1.1, 2 ],
+    "lookat": [0.0, 1.0, -0.1],
+    "up": [0.0, 0.0, 0.5]
+},
+"scene":{
+    "backgroundcolor":[0.01, 0.01, 0.01],
+    "lightsources": [
+    {
+        "type": "pointlight",
+        "position": [0, 0.6, 0.5],
+        "is": [100.0, 100.0, 100.0],
+        "id": [100.0, 100.0, 100.0]
+    }
+    ],
+  "shapes": [
+    {
+      "type": "sphere",
+      "center": [ 0.0, 0.0, 0.0 ],
+      "radius": 0.5,
+      "material": {
+        "ks": 0.4,
+        "kd": 0.8,
+        "specularexponent": 3,
+        "diffusecolor": [ 0.4, 0.3, 0.4 ],
+        "tPath": "../textures/sky-map.jpg",
+        "tWidth": 850,
+        "tHeight": 480
+      }
+    },
+
+    {
+      "id": "back wall",
+      "type": "plane",
+      "v1": [ 2.0, -5.3, -2.0 ],
+      "v2": [ -2.0, 0.0, -2.0 ],
+      "v3": [ -2.0, -5.3, -2.0 ],
+      "v0": [ 2.0, 0.0, -2.0 ],
+      "material": {
+        "ks": 0.6,
+        "kd": 0.7,
+        "kr": 0.3,
+        "specularexponent": 10,
+        "diffusecolor": [ 1.0, 1.0, 1.0 ]
+      }
+    },
+    {
+      "id": "floor",
+      "type": "plane",
+      "v1": [ 2.0, 0.0, 2.0 ],
+      "v2": [ -2.0, 0.0, -2.0 ],
+      "v3": [ -2.0, 0.0, 2.0 ],
+      "v0": [ 2.0, 0.0, -2.0 ],
+      "material": {
+        "ks": 0.6,
+        "kd": 0.7,
+        "kr": 0.3,
+        "specularexponent": 10,
+        "diffusecolor": [ 0.0, 0.0, 0.0 ],
+        "tPath": "../textures/sicily.jpg",
+        "tWidth": 600,
+        "tHeight": 490
+      }
+    },
+    {
+      "id": "left wall",
+      "type": "triangle",
+      "v0": [ -2.0, 0.0, 2.0 ],
+      "v1": [ -2.0, -5.3, -2.0 ],
+      "v2": [ -2.0, 0.0, -2.0 ],
+      "material": {
+        "ks": 0.6,
+        "kd": 1.0,
+        "kr": 0.4,
+        "specularexponent": 10,
+        "diffusecolor": [ 1.0, 0.2, 0.2 ],
+        "tPath": "../textures/stars.jpg",
+        "tWidth": 600,
+        "tHeight": 490
+      }
+    },
+    {
+      "id": "right wall",
+      "type": "triangle",
+      "v0": [ 2.0, 0.0, -2.0 ],
+      "v1": [ 2.0, -5.3, -2.0 ],
+      "v2": [ 2.0, 0.0, 2.0 ],
+      "material": {
+        "ks": 0.6,
+        "kd": 1.0,
+        "kr": 0.4,
+        "specularexponent": 10,
+        "diffusecolor": [ 0.2, 0.2, 1.0 ],
+        "tPath": "../textures/stars.jpg",
+        "tWidth": 600,
+        "tHeight": 490
+      }
+    },
+
+    {
+      "id": "polygon",
+      "type": "trimesh",
+      "scale": 0.3,
+      "locX": -1.0,
+      "locY": -1.0,
+      "locZ": 0.0,
+      "n": 1,
+      "material": {
+        "ks": 0.6,
+        "kd": 1.0,
+        "kr": 0.4,
+        "specularexponent": 10,
+        "diffusecolor": [ 1.0, 0.75, 0.79 ],
+        "tPath": "../textures/Seamless_metal_galvanized_steel_texture.jpg",
+        "tWidth": 600,
+        "tHeight": 490
+      }
+    },
+    {
+      "id": "polygon",
+      "type": "trimesh",
+      "scale": 0.3,
+      "locX": 1.0,
+      "locY": -2.5,
+      "locZ": 0.0,
+      "n": 5,
+      "material": {
+        "ks": 0.6,
+        "kd": 1.0,
+        "kr": 0.3,
+        "specularexponent": 10,
+        "diffusecolor": [ 1.0, 0.75, 0.79 ]
+      }
+    },
+    {
+      "type": "sphere",
+      "center": [ 1.0, 0.0, -0.5 ],
+      "radius": 0.6,
+      "material": {
+        "ks": 0.4,
+        "kd": 0.8,
+        "kr": 0.4,
+        "specularexponent": 3,
+        "diffusecolor": [ 1.0, 0.75, 0.79 ],
+        "tPath": "../textures/pink.jpg",
+        "tWidth": 600,
+        "tHeight": 490
+      }
+    }
+  ]
+}
+}
